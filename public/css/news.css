@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header 
+{
+  margin: -20px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 69%;
+  justify-content: space-between;
+  align-items: center;    
+}
+
+/* go to school chat btn */
+.button
+{
+  display: flex;
+  position: relative;
+  border-radius: 20px;
+  text-align: center;
+  width: 200px;
+  font-size: 16px;
+  color: #ff3a3a;
+  font-family: sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 1.69s;
+  border-radius: 20px 20px;
+}
+
+/** button colours and spacing ^^^ **/
+header ul a
+{
+  position: relative;
+  color: #ff3a3a;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  border-radius: 20px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Keeps Home, Chat and News Buttons inline */
+header ul
+{
+  display: flex;
+}
+
+/* nav bar buttons red neon */
+.button:hover
+{
+    box-shadow: 0 1px 15px 0 #ff3a3a9b inset, 0 1px 25px 0 #ff3a3a9b,
+                0 1px 15px 0 #ff3a3a9b inset, 0 1px 25px 0 #ff3a3a9b;   
+}
+
+#homebtn:hover
+{
+    box-shadow: 0 1px 15px 0 #ff3a3a9b inset, 0 1px 25px 0 #ff3a3a9b,
+    0 1px 15px 0 #ff3a3a9b inset, 0 1px 25px 0 #ff3a3a9b;   
+    transition: 0.9s;
+}
+
+#chatbtn:hover
+{
+    box-shadow: 0 1px 15px 0 #ff3a3a9b inset, 0 1px 25px 0 #ff3a3a9b,
+    0 1px 15px 0 #ff3a3a9b inset, 0 1px 25px 0 #ff3a3a9b;  
+    transition: 0.9s; 
+}
+
+#newsbtn:hover
+{
+    box-shadow: 0 1px 15px 0 #ff3a3a9b inset, 0 1px 25px 0 #ff3a3a9b,
+    0 1px 15px 0 #ff3a3a9b inset, 0 1px 25px 0 #ff3a3a9b;  
+    transition: 0.9s; 
+}
+
+/** Search Section**/
+#searchSec
+{
+  color: whitesmoke;
+  text-align: center;
+  padding-left: 5px;
+}
+
+#xMark
+{
+  position: relative;
+  left: 37.3%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  top: 2px;
+  height: 38px;
+  width: 38px;
+  border: 0px;
+  background-color: #ffffff;
+}
+
+
+
+.dropbtn 
+{
+    background-color: #04AA6D;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 13px;
+    border: none;
+    word-spacing: 5px;
+    width: 200px;
+}
+
+.dropdown 
+{
+  position: relative;
+  display: inline-block;
+  left: 43.7%;
+  width: 200px;
+}
+
+.dropdown-content
+{
+  border: 1px black solid;
+  border-radius: 10px;
+}
+
+#sOptionsTag
+{
+  width: 190px;
+}
+
+#sOptionsTopic
+{
+  width: 190px;
+}
+
+.searchByTopic
+{
+  position: relative;
+  left: 40%;
+  width: 300px;
+  height: 42px;
+  border-radius: 50px;
+  vertical-align: middle;
+  padding-left: 15px;
+}
+
+.searchByTags
+{
+  position: relative;
+  left: 40%;
+  width: 300px;
+  height: 42px;
+  border-radius: 50px;
+  vertical-align: middle;
+  padding-left: 15px;
+}
+
+.startSearch
+{
+  position: relative;
+  padding-top: 2=1;
+  left: 569px;
+  background: whitesmoke;
+  top: 2px;
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 30px;
+  vertical-align: middle;
+  padding-left: 5px;
+  border: 1px solid black;
+}
+
+html
+{
+  background: #23272A;
+}
+
+
+
+lpl
+{
+  color: rgb(14, 123, 173);
+}
+
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a
+{
+    color: black;
+    padding: 5px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    display: block;
+}
+
+/** POST **/
+.post
+{
+  background: #191919aa;
+  opacity: 0.7;
+  max-width: 95%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  border: 1px solid whitesmoke;
+  border-radius: 30px;
+  border-bottom: 1px solid #3a3a48;
+  margin: 20px;
+}
+
+.post:hover
+{
+  background: #000000;
+  transition: 6.969s;
+}
+
+.post:not(:hover)
+{
+  background: #191919aa;
+  transition: 6.969s;
+}
+
+.profilePicture
+{
+  width: 69px;
+  height: 69px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.postPoster
+{
+  font-size: larger;
+  color: whitesmoke;
+}
+
+.postTopic
+{
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+.timestamp
+{
+  color: whitesmoke;
+  padding-left: 69%;
+  font-size: smaller;
+  opacity: 0.7;
+}
+
+.postContent
+{
+  color: whitesmoke;
+  padding-right: 50px;
+}
+
+.attachImg
+{
+  min-height: 500px;
+  overflow-x: scroll;
+}
+
+.postTags
+{
+  color: whitesmoke;
+}
+
+/**like button**/
+#likebtn
+{
+  border: 2px solid #ff3a3a;
+  width: 90px;
+  height: 40px;
+  border-radius: 50px;
+}
+
+#dislikebtn
+{
+  border: 2px solid #ff3a3a;
+  width: 90px;
+  height: 40px;
+  border-radius: 50px;
+}
+
+
+.tags
+{
+  border: red;
+  border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* removes the scroll bar */
+body::-webkit-scrollbar
+{
+    display: none;
+}

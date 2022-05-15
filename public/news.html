@@ -1,0 +1,51 @@
+<html>
+  <script defer src="webjs/socket.io.js"></script>
+  <script defer src="webjs/news.js"></script>
+  <link rel="stylesheet" href="css/news.css">
+  <script src="https://kit.fontawesome.com/2fb4e1c16a.js" crossorigin="anonymous"></script>
+
+  <header>
+    <div class="navbar">
+      <ul class="headerbtns">
+          <a href="#" id="homebtn">Home</a>
+          <a href="chat.html" id="chatbtn">Chat</a>
+          <a href="news.html" id="newsbtn">News</a>
+        <!-- <a class="loginB" href="/login.html">Login</a> -->
+        <a class="signinB" href="#" onclick="signOut();localStorage.clear();">Sign Out</a>
+      </ul>
+    </div>
+  </header>
+
+  <p id="searchSec">Search what news you want to find</p>
+  
+
+  <div class="dropdown">
+    <button class="dropbtn" onclick="showDropdown()"><i class="fa-solid fa-gear"></i>     Search Options</i></button>
+    <div class="dropdown-content">
+      <a id="sOptionsTopic" href="#" onclick="hideTagsBar()">Search by Topic</a>
+      <a id="sOptionTag" href="#" onclick="hideTopicBar()">Search by Tags</a>
+    </div>
+  </div>
+
+  <form class="searchBox" style="display: flex;" id="searchBox">
+    
+    <input type="text" placeholder="Search by Tags" class="searchByTags" name="box1" style="display: none;"  id="tagsbar">
+    <input type="text" placeholder="Search by Topic" class="searchByTopic" name="box2" style="display: block;"  id="topicbar">
+    <button id="xMark" onclick="clearSBox()"><i class="fa-solid fa-xmark"></i></button>
+    <button type="submit" class="startSearch"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </form>
+  
+  <div>
+    <ul id="posts"></ul>
+  </div>
+
+  <div>
+    <form id="msgBox">
+      <input type="text" placeholder="Topic" name="box1" required><br>
+      <input type="text" placeholder="Post Content" name="box2" required><br>
+      <input type="text" placeholder="Attachments : paste the links of the videos/images/audio that you want to send in your post with a gap in between" name="box3"><br>
+      <input type="text" placeholder="Tags:(example: funny class12 teacher) should be seperated by a space" name="box4" required>
+      <button type="submit">Submit</button> 
+    </form>
+  </div>
+</html>
